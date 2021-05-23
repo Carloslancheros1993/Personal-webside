@@ -15,15 +15,19 @@ a{
 	width:100%;
 	height: 100vh;
 	box-sizing: border-box;
-	background-size: 650px;
-	background-position: right bottom;
-	background-repeat: no-repeat;
-	background-image: url("./pic.png");
 	background-color: #edf1fd;
+}
+.profile-img {
+	display: flex;
+	justify-content: center;
+}
+.profile-img img {
+	margin-left: 790px;
+    padding-top: 200px;
 }
 nav{
 	display:flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	text-transform: uppercase;
 	font-weight: 600;
@@ -46,12 +50,6 @@ nav{
 	padding: 10px 15px;
 	color:#6c707c;
 	font-size: 12px;
-}
-.logo{
-	font-size: 25px;
-	font-weight: bold;
-	color:#292929;
-	font-family:Poppins;
 }
 .toggle{
 	display: none;
@@ -82,17 +80,17 @@ nav{
 	letter-spacing: 3px;
 	color:#292929;
 }
-.cv-btn{
-	width:200px;
-	height: 45px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #292929;
-	color:#FFFFFF;
+.cv-btn {
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #292929;
+    color: #FFFFFF;
 }
-.cv-btn:hover{
-	background-color: #131313;
+.cv-btn:hover {
+	background-color: #17d1ac;
 	transition: all ease 0.5s;
 }
 .black-line {
@@ -170,9 +168,7 @@ nav{
 	justify-content: center;
 }
 .about-model img{
-	width: 40%;
-	height: 50%;
-	padding-left: 120px;
+	width: 50%;
 }
 #services{
     width:100%;
@@ -260,7 +256,7 @@ nav{
 	transform:translateY(-10px);
 	transition: all ease 0.3s;
 }
-#portfolio{
+#frontend{
 	width:100%;
 	box-sizing: border-box;
 	font-family: calibri;
@@ -270,7 +266,16 @@ nav{
 	justify-content: center;
 	padding: 60px 2% 20px 2%;
 }
- 
+#backend{
+	width:100%;
+	box-sizing: border-box;
+	font-family: calibri;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 60px 2% 20px 2%;
+}
 .p-headind{
 	font-family: calibri;
 	font-size: 1.7rem;
@@ -300,7 +305,7 @@ nav{
 	width: 90%;
 	height:70vh;
 	display:grid;
-	grid-template-columns:1fr 1fr 1fr;
+	grid-template-columns:1fr 1fr;
 	grid-template-rows: auto auto;
 	grid-gap: 10px;
 }
@@ -318,17 +323,17 @@ nav{
 	background-color: rgba(23,209,172,0.80);
 	display:none;
 }
-.overlay-text h1,p{
+.overlay-text h1, a, p{
 	color: #FFFFFF;
 }
-.overlay-text h1{
+.overlay-text h3{
 	font-size: 2.2rem;
 	margin: 0px;
 	padding: 0px;
 	letter-spacing: 2px;
 }
 .overlay-text p{
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	margin: 0px;
 }
 .p-box:hover .overlay-text{
@@ -481,8 +486,11 @@ nav{
 	transition: all ease 0.1s;
 }
 @media(max-width:1990px) {
-	#main {
-		background-size: 400px;
+	.profile-img img{
+		margin-left: 692px;
+		padding-top:10%;
+		width: 480px;
+		height: 600px;
 	}
 }
 @media(max-width:1190px){
@@ -496,7 +504,12 @@ nav{
 	}
 	.about-model img{
 		width: 300px;
-		height:400px;
+		height:200px;
+	}
+	.profile-img img{
+		padding-top: 10%;
+		width: 220px;
+		height: 400px;
 	}
 	#services{
 		height:auto;
@@ -524,6 +537,9 @@ nav{
 		transform: translate(-50%,-50%);
 	}
 	.about-model{
+		display: none;
+	}
+	.profile-img {
 		display: none;
 	}
 	#about{

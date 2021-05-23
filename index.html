@@ -6,46 +6,50 @@
     <link rel="stylesheet" href="./css/styles.css">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-    <title>Personal Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <title>Portafolio</title>
 </head>
 <body>
     <section id="main">
         <!--navigation-------------------------------->
         <nav>
-        <!--logo--->
-            <a href="#" class="logo">CL</a>
         <!--menu--------->
             <div class="toggle"></div>
             <ul class="menu">
-                <li class="active"><a href="#main" >Home</a></li>	
-                <li><a href="#about">About</a></li>	
-                <li><a href="#services">Services</a></li>	
-                <li><a href="#portfolio">Portfolio</a></li>		
-                <li><a href="#contact-form">Contact</a></li>	
+                <li class="active"><a href="#main" >Inicio</a></li>	
+                <li><a href="#about">Acerca de mi</a></li>	
+                <li><a href="#services">Servicios</a></li>	
+                <li><a href="#frontend">Front-End</a></li>		
+                <li><a href="#backend">Back-End</a></li>	
+                <li><a href="#contact-form">Contacto</a></li>	
             </ul>
         </nav>
+        <div class="name">
+            <!--hello------->
+            <p class="animated bounceInDown">Hola</p>
+            <!--name--->
+            <h1 class="animated bounceInDown">Soy <font color="#17d1ac">Carlos</font> Lancheros</h1>
+            <!--details--------------->
+            <p class="details animated bounceInDown">Administrador de Empresas y Desarrollador FullStack</p>
+            <!--cv button-------------------->
+            <a href="./css/CV.pdf" class="cv-btn animated infinite pulse">Descargar CV</a>
+            </div>
+                <!--down arrow-------------->
+            <div class="black-line animated bounceInUp" ></div>
+            <!--social---------------->
+            <div class="profile-img">
+                <img src="css/pic.png" class="animated zoomIn" alt="profile">
+            </div>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/carlos-lancheros-alonso-7596ab17b/"><i class="fab fa-linkedin animated rotateIn"></i></a>
+                <a href="https://github.com/"><i class="fab fa-github animated rotateIn"></i></a>	
+            </div>
+            
      </section>
 
-      <!--name--------------------------->
-	<div class="name">
-        <!--hello------->
-        <p>Hola</p>
-        <!--name--->
-        <h1>Soy <font color="#17d1ac">Carlos</font> Lancheros</h1>
-        <!--details--------------->
-        <p class="details">Administrador de Empresas y Desarrollador FullStack</p>
-        <!--cv button-------------------->
-        <a href="#" class="cv-btn">Descargar Cv</a>
-        </div>
-            <!--down arrow-------------->
-        <div class="black-line" ></div>
-        <!--social---------------->
-        <div class="social">
-            <a href="https://www.linkedin.com/in/carlos-lancheros-alonso-7596ab17b/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/"><i class="fab fa-github"></i></a>	
-        </div>
-      
-
+    
          <!--about----------------------->
 	<section id="about">
             <!--text---------------------->
@@ -78,11 +82,11 @@
             <!--type----------->
             <div class="s-type">Front-End</div>
             <!--name------->
-            <img src="images/s1.png">
+            <img src="./css/frontend.png">
         </div>
         <!--text----------------->
         <div class="s-b-text">
-        <a href="#">With Divi, every part of your website is customizable. You have complete freedom to create the perfect website for you or your clients. Easily change colors, fonts and text styles. Apply stunning animations.</a>	
+        <a href="#frontend">With Divi, every part of your website is customizable. You have complete freedom to create the perfect website for you or your clients. Easily change colors, fonts and text styles. Apply stunning animations.</a>	
         </div>
         </div>
             <!--box-2---------------->
@@ -92,93 +96,116 @@
         <!--type----------->
             <div class="s-type">Back-End</div>
             <!--name------->
-            <img src="images/s2.png">
+            <img src="./css/backend.png">
         </div>
         <!--text----------------->
         <div class="s-b-text">
-        <a href="#">With Divi, every part of your website is customizable. You have complete freedom to create the perfect website for you or your clients. Easily change colors, fonts and text styles. Apply stunning animations.</a>	
+        <a href="#backend">Node.js, PostgreSQL, Express, Nodemon, Morgan, Sequelize, Jsonwebtoken, Swagger, 
+            Joi, Nodemailer, Googleapis</a>	
         </div>
         </div>
             <!--box-3---------------->
         </section>
 
-         <!--portfolio------------------->
-	<section id="portfolio">
+         <!--Front-End------------------->
+	<section id="frontend">
         <!--heading----------->
-        <h1 class="p-headind">Portafolio</h1>
-        <!--portfolio-container------------>
-        <div class="p-container">
-        <!--portfolio-box-1-------->
-        <div class="p-box">
+        <h1 class="p-headind">Front-End</h1>
+        <!--portafolio-container------------>
+            <div class="p-container">
+        <!--portafolio-box-1-------->
+                <div class="p-box">
         <!--text--------->
-        <div class="overlay-text">
-            <h1>Writting</h1>
-            <p>Client Project</p>	
-        </div>
+                    <div class="overlay-text">
+                        <h3><a href="https://7y758.csb.app/">API Countries</a></h3>
+                        <p>React.JS</p>	
+                    </div>
         <!--bg-img------------->
-        <img src="images/w1.jpg">
+                        <img src="./css/FLAGS.png"alt="desk">
             
-        </div>
-        <!--portfolio-box-2-------->
-        <div class="p-box">
+                </div>
+        <!--portafolio-box-2-------->
+                <div class="p-box">
             <!--text--------->
-        <div class="overlay-text">
-        <h1>Ideas</h1>
-        <p>Client Project</p>	
-        </div>
+                    <div class="overlay-text">
+                        <h3><a href="https://w6k0u.csb.app/">Poke API</a></h3>
+                        <p>React.js</p>	
+                    </div>
         <!--bg-img------------->
-        <img src="images/w2.jpg">
-        </div>
+                        <img src="./css/poke.png">
+                </div>
         <!--portfolio-box-3-------->
-        <div class="p-box">
+                <div class="p-box">
         <!--text--------->
-        <div class="overlay-text">
-        <h1>Music</h1>
-        <p>Client Project</p>	
-        </div>
+                    <div class="overlay-text">
+                        <h3><a href="https://musing-yonath-95d086.netlify.app">API Trivia</a></h3>
+                        <p>JavaScript</p>	
+                    </div>
         <!--bg-img------------->
-        <img src="images/w3.jpg">
-        </div>
+                        <img src="./css/trivia.png">
+                </div>
         <!--portfolio-box-4-------->
-        <div class="p-box">
+                <div class="p-box">
         <!--text--------->
-        <div class="overlay-text">
-        <h1>Time</h1>
-        <p>Client Project</p>	
-        </div>
+                    <div class="overlay-text">
+                        <h3><a href="https://eloquent-pike-6da35d.netlify.app">CRUD Cars</a></h3>
+                        <p>JavaScript</p>	
+                    </div>
         <!--bg-img------------->	
-        <img src="images/w4.jpg">
-        </div>
-        <!--portfolio-box-5-------->
-        <div class="p-box">
-        <!--text--------->
-        <div class="overlay-text">
-        <h1>Creative</h1>
-        <p>Client Project</p>	
-        </div>
-        <!--bg-img------------->	
-        <img src="images/w5.jpg">
-        </div>
-        <!--portfolio-box-6-------->
-        <div class="p-box">
-        <!--text--------->
-        <div class="overlay-text">
-        <h1>Books</h1>
-        <p>Client Project</p>	
-        </div>
-        <!--bg-img------------->	
-        <img src="images/w6.jpg">
-        </div>
-            
-        </div>
+                        <img src="./css/crud.png">
+                </div>
+        
+            </div>
         </section>
 
+         <!--Back-End------------------->
+	<section id="backend">
+        <!--heading----------->
+        <h1 class="p-headind">Back-End</h1>
+        <!--portfolio-container------------>
+            <div class="p-container">
+        <!--portfolio-box-1-------->
+                <div class="p-box">
+        <!--text--------->
+                    <div class="overlay-text">
+                        <h3><a href="https://github.com/Carloslancheros1993/proyecto_final.git">Servicio de Autenticación</a></h3>
+                        <p>Node.js y PostgresSQL, usando Express, Sequelize,
+                            API REST, Json Web Token y Swagger</p>	
+                    </div>
+        <!--bg-img------------->
+                        <img src="./css/swagger.png">
+            
+                </div>
+        <!--portfolio-box-2-------->
+                <div class="p-box">
+            <!--text--------->
+                    <div class="overlay-text">
+                        <h3><a href="https://github.com/Carloslancheros1993/Proyecto_PostgreSQL">Gym Project</a></h3>
+                        <p>PostgreSQL</p>	
+                    </div>
+        <!--bg-img------------->
+                        <img src="./css/sql.png">
+            </div>
+        <!--portfolio-box-3-------->
+                <div class="p-box">
+        <!--text--------->
+                    <div class="overlay-text">
+                        <h3><a href="https://github.com/Carloslancheros1993/node-subway-project">Subway Project</a></h3>
+                        <p>Node.js, PostgreSQL, Express, Morgan, Nodemon y Sequelize</p>
+                    </div>
+        <!--bg-img------------->
+                    <img src="./css/subway.png">
+                </div>
+        
+            
+            </div>
+    </section>
          <!--Contact-btn------------------>
 	<section id="contact-btn">
         <!--heading-------------->
         <h1 class="c-b-heading">Tiene algún proyecto en mente ?</h1>
         <!--btn-------->
-            <button >Contácteme</button>
+            <button><a href="#contact-form">Contácteme</a></button>
         </section>
 
          <!--contact-form------------------->
