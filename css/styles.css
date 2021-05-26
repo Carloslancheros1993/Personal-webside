@@ -23,7 +23,8 @@ a{
 }
 .profile-img img {
 	margin-left: 790px;
-    padding-top: 200px;
+	padding-top: 200px;
+	filter: brightness(90%);
 }
 nav{
 	display:flex;
