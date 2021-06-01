@@ -309,6 +309,15 @@ nav{
 	grid-template-rows: auto auto;
 	grid-gap: 10px;
 }
+.p-b-container{
+	width: 90%;
+	height:70vh;
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-template-rows: auto auto;
+	grid-gap: 10px;
+	text-align: center;
+}
 .overlay-text{
 	font-family: calibri;
 	position: absolute;
